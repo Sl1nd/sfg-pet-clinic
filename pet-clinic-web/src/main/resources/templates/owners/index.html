@@ -1,25 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'owners')}">
 <head>
   <meta charset="UTF-8">
   <title>List of Per Owners</title>
 </head>
 <body>
-  <h1>Owners List</h1>
-<table>
+  <h2>Owners List</h2>
+<table class="table table-striped">
   <thead>
   <tr>
-    <th>id</th>
-    <th>FistName</th>
-    <th>
+    <th style="width: 150px;">id</th>
+    <th style="width: 200px;">FistName</th>
+
+    <th style="width: 120px">
       LastName
     </th>
   </tr>
   </thead>
-  <tbody th:each="owner: ${owners}">
-  <td th:text="${owner?.id}">1</td>
-  <td th:text="${owner?.fistName}">John</td>
-  <td th:text="${owner?.lastName}">Doe</td>
+  <tbody >
+    <tr th:each="owner: ${owners}">
+      <td th:text="${owner?.id}">1</td>
+      <td th:text="${owner?.fistName}">John</td>
+      <td th:text="${owner?.lastName}">Doe</td>
+    </tr>
   </tbody>
 </table>
 </body>
