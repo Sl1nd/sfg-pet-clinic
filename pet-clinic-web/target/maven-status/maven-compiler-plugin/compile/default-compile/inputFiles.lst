@@ -1,1 +1,5 @@
+/home/slindauer/Development/sfg-pet-clinic/pet-clinic-web/src/main/java/guru/springframework/sfgpetclinic/bootstrap/DataLoader.java
 /home/slindauer/Development/sfg-pet-clinic/pet-clinic-web/src/main/java/guru/springframework/sfgpetclinic/SfgPetClinicApplication.java
+/home/slindauer/Development/sfg-pet-clinic/pet-clinic-web/src/main/java/guru/springframework/sfgpetclinic/controllers/owners/OwnersController.java
+/home/slindauer/Development/sfg-pet-clinic/pet-clinic-web/src/main/java/guru/springframework/sfgpetclinic/controllers/IndexController.java
+/home/slindauer/Development/sfg-pet-clinic/pet-clinic-web/src/main/java/guru/springframework/sfgpetclinic/controllers/vets/VetsController.java
