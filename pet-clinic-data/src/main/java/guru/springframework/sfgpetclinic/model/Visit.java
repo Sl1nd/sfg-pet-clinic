@@ -9,9 +9,10 @@ public class Visit extends BaseEntity {
   private LocalDate date;
   @Column(name="description")
   private String description;
+
   @ManyToOne
   @JoinColumn(name="pet_id")
-  private Pet per;
+  private Pet pet;
 
   public LocalDate getDate() {
     return date;
@@ -29,11 +30,11 @@ public class Visit extends BaseEntity {
     this.description = description;
   }
 
-  public Pet getPer() {
-    return per;
+  public Pet getPet() {
+    return pet;
   }
 
-  public void setPer(Pet per) {
-    this.per = per;
+  public void setPet(Pet pet) {
+    this.pet = pet;
   }
 }
